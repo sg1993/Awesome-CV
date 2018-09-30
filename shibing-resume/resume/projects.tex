@@ -1,0 +1,75 @@
+%-------------------------------------------------------------------------------
+%	SECTION TITLE
+%-------------------------------------------------------------------------------
+\cvsection{Projects}
+
+
+%-------------------------------------------------------------------------------
+%	CONTENT
+%-------------------------------------------------------------------------------
+\cvsubsection{Minor Projects}
+
+\begin{cventries}
+%---------------------------------------------------------
+  \minprojentry
+    {
+      \begin{cvitems} % Description(s) of experience/contributions/knowledge
+        \item {Chrome extension for saving user sessions and reloading them later. \newline
+        \textit{\textbf{\href{https://chrome.google.com/webstore/detail/save-the-session/gfokkgedgncpmhnbomipnbnpkedjpbil}{Save-The-Session}}} has a little over 3000 active users \enspace - \enspace 
+        {\textbf{\href{https://github.com/sg1993/Save-The-Session}{Github}}}}
+      \end{cvitems}
+    }
+  \minprojentry
+    {
+      \begin{cvitems} % Description(s) of experience/contributions/knowledge
+        \item {As part of \textit{Data Structures \& Algorithms} course in sophomore year, I implemented a graph plotter for polynomial equations. It can plot single variable polynomials (y = f(x)) with support for trigonometric functions, basic navigation and zooming in/out. It uses an \textit{Expression tree} for evaluating the value of expression (after converting user-input to postfix format), and \textit{Swing} for GUI \enspace - \enspace 
+        {\textbf{\href{https://github.com/sg1993/BasicPlotter}{Github}}}}
+      \end{cvitems}
+    }
+  \minprojentry
+    {
+      \begin{cvitems} % Description(s) of experience/contributions/knowledge
+        \item {As part of the same course, also implemented a basic Auto-Complete that used \textit{Trie} in the backend for word prediction, and \textit{Swing} for GUI \enspace - \enspace 
+        {\textbf{\href{https://github.com/sg1993/AutoComplete}{Github}}}.}
+      \end{cvitems}
+    }
+  \minprojentry
+    {
+      \begin{cvitems} % Description(s) of experience/contributions/knowledge
+        \item {As part of \textit{Compiler \& Language processors} course in junior year, implemented a compiler for a basic scripting language, with support for arithmetic operations, string manipulations, print-statements, etc. Used \textit{lex} \& \textit{yacc} for tokenization and parsing.}
+      \end{cvitems}
+    }
+%---------------------------------------------------------
+
+%---------------------------------------------------------
+\end{cventries}
+
+\cvsubsection{Major Projects}
+
+\begin{cventries}
+%---------------------------------------------------------
+  \majprojentry
+    {Content-based Image retrieval using Local-Tetra Patterns on Hadoop MapReduce framework}
+    {
+      \begin{cvitems} % Description(s) of experience/contributions/knowledge
+        \item {This was my senior-year project. The aim was to implement a popular Image Retrieval algorithm on a distributed computing framework (MapReduce in this case).}
+        \item {Content based image retrieval extracts features (Local Tetra Patterns in this case) from every image in dataset and then retrieves images from the dataset that falls in the same category as the user-specified image. In simple terms, when the input image specified by the user is that of an elephant, fetch a picture of an elephant from a huge database of pictures of various categories (elephants, houses, vehicles, etc).}
+        \item {For Mapreduce implementation, the stages involved taking a huge dataset of images and converting them to MapReduce's native SequenceFile type (\textbf{\href{https://github.com/sg1993/sequencify-CBIR-on-hadoop}{Github-stage-1}}), extracting image features from SequenceFiles and storing the features on Hadoop's Distributed FileSystem (\textbf{\href{https://github.com/sg1993/CBIR-on-Hadoop}{Github-stage-2}}), and then fetching the results to a user-specified query(\textbf{\href{https://github.com/sg1993/CBIR-query-on-Hadoop}{Github-stage-3}}).}
+        \item {The experiments were conducted on institute's High Performance cluster and the results were published in \textit{IEEE International Congress on Big Data, 2015}}
+      \end{cvitems}
+    }
+  \majprojentry
+    {Weighted finite automata encoding of images}
+    {
+      \begin{cvitems} % Description(s) of experience/contributions/knowledge
+        \item {This was a spinoff from the project described above. The idea was to explore how feature extraction from an image can be done using Weighted-finite-automata encoding of the same image.}
+        \item {WFA encoding is a technique primarily meant for image compression but my focus was on exploring its applicability on tamper-detection in images.}
+        \item {A paper on the same was published in \textit{IEEE International Conference on Semantic Computing, 2015} }
+      \end{cvitems}
+    }
+    
+%---------------------------------------------------------
+
+%---------------------------------------------------------
+\end{cventries}
+
